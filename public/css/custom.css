@@ -1,0 +1,57 @@
+body {
+    font-family: 'Times New Romas';
+}
+
+.text-right {
+    text-align: right;
+    place-self: center;
+}
+
+.header-tm {
+    position: absolute;
+    font-size: 9px;
+    margin-top: 9px;
+    margin-left: 3px;
+}
+
+.slider {
+    height: 75vh;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider .header-text, .about p {
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+.slider p {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.about p.title, 
+.our-services p.title, 
+.our-event p.title {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 10px;
+}
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

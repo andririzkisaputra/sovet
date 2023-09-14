@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  sovet.id:
+    image: sovet.id:1.0
+    container_name: sovet.id
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '2081:80'
+    volumes:
+      - .:/app
+    command: >
+      sh -c "composer install \
+      && cp .env.example .env \
+      && php artisan key:generate \
+      && php artisan serve --host=0.0.0.0 --port=80"
