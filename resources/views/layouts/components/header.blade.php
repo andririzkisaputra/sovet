@@ -47,6 +47,14 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-auto d-flex align-items-center gap-6 gap-lg-0">
+                    <button class="btn-menu d-flex d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

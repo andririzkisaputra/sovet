@@ -184,8 +184,9 @@
 
             <div class="customer-logos slider d-flex">
                 <!--== Start Campaign Item ==-->
-                <img class="slide" src="{{ asset('assets/images/client/bmw.png') }}" width="150" height="50"
-                    alt="{{ ENV('APP_NAME') }}">
+                <a href="javascript:void(0)" class="image rounded">
+                    <img src="{{ asset('assets/images/client/clients.png') }}" alt="{{ ENV('APP_NAME') }}">
+                </a>
                 <!--== End Campaign Item ==-->
             </div>
         </div>
