@@ -33,8 +33,6 @@
             <!--== Start Section Title ==-->
             <div class="section-title center mt-n3">
                 <h2 class="title mb-4">Our Services</h2>
-                <span class="shape"><img src="{{ asset('assets/images/shape/section-title.png') }}" width="99"
-                        height="7" alt="Section Title Shape"></span>
             </div>
             <!--== End Section Title ==-->
             <div class="row row-gutter-45 mb-n6">
@@ -50,7 +48,7 @@
                 <!--== Start Feature Item ==-->
                 <div class="col-md-6 col-lg-4 mb-6">
                     <div class="feature-item">
-                        <h4 class="title">Design and Executin</h4>
+                        <h4 class="title">Design & Executin</h4>
                         <p class="desc">Bringing ideas to life with technical detail for events.</p>
                     </div>
                 </div>
