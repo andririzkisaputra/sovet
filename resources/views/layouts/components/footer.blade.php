@@ -38,11 +38,19 @@
                                     data-bs-target="#dividerId-1" aria-expanded="false">Main Office</h4>
                                 <div id="dividerId-1" class="widget-collapse-body collapse">
                                     <ul class="footer-widget-nav">
-                                        <li class="text-white">BP 7/20 Puri Bintaro Sektor 9, Bintaro Jaya, <b>Tangerang
-                                                Selatan</b></li>
-                                        <li class="text-white">Gubeng Kertajaya IV A No. 26, <b>Surabaya</b></li>
+                                        <li class="text-white">
+                                            <b>Jakarta</b>
+                                        </li>
+                                        <li class="text-white mb-3">
+                                            BP 7/20 Puri Bintaro Sektor 9, Bintaro Jaya, <b>Tangerang Selatan</b>
+                                        </li>
+                                        <li class="text-white">
+                                            <b>Surabaya</b>
+                                        </li>
+                                        <li class="text-white mb-3">Gubeng Kertajaya IV A No. 26.</li>
+                                        <li class="text-white"><b>Bali</b></li>
                                         <li class="text-white">Jl. Rumah Sakit Ubud, Terace Campus I Private Residence
-                                            No. 4 Jimbaran, Kuta Selatan, Badung, <b>Bali</b></li>
+                                            No. 4 Jimbaran, Kuta Selatan, Badung.</li>
                                     </ul>
                                 </div>
                             </div>
