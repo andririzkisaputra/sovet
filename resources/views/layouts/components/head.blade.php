@@ -20,5 +20,40 @@
 <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
+{{-- Skrip JSON-LD --}}
+<script type="application/ld+json">
+    {
+      "@context": "https://sovet.id",
+      "@type": "WebSite",
+      "url": "{{ route('landing.index') }}",
+      "name": "Nama Website",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nama Publisher"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ route('landing.index') }}"
+      },
+      "menu": [
+        {
+          "@type": "MenuItem",
+          "name": "Home",
+          "url": "{{ route('landing.index') }}"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "About",
+          "url": "{{ route('landing.about') }}"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Contact",
+          "url": "{{ route('landing.contact') }}"
+        }
+      ]
+    }
+</script>
+
 {{-- Style Css Custome Page --}}
 @stack('css')

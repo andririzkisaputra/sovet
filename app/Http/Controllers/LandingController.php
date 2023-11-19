@@ -10,4 +10,14 @@ class LandingController extends Controller
     {
         return view('landing-pages.home');
     }
+
+    public function about()
+    {
+        return view('landing-pages.about');
+    }
+
+    public function contact()
+    {
+        return view('landing-pages.contact');
+    }
 }
