@@ -6,7 +6,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>@yield('title') | {{ ENV('APP_NAME') }}</title>
     <meta name="google-site-verification" content="{{ ENV('GOOGLE_SITE_VERIFICATION') }}">
-    <meta name="robots" content="noindex, follow" />
     <meta name="description" content="@yield('title') | {{ ENV('APP_NAME') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="keywords" content="{{ ENV('APP_NAME') }} Event Organizer" />
