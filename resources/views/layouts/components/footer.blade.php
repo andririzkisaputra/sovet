@@ -1,12 +1,12 @@
 <footer class="footer-section section">
     <!--== Start: Footer Main ==-->
-    <div class="footer-main section-padding bg-img" data-bg-img="assets/images/photos/bg2.jpg">
+    <div class="footer-main section-padding bg-img" data-bg-img="{{ asset('assets/images/photos/bg2.jpg') }}">
         <div class="container mb-n3">
             <div class="row align-items-center footer-about">
                 <div class="col-md-4 col-lg-3 mb-8 mb-md-0">
                     <!--== Start: Footer Widget ==-->
                     <div class="footer-widget text-center text-md-start">
-                        <a class="footer-widget-logo me-auto me-md-0 ms-auto ms-md-0" href="index.html">
+                        <a class="footer-widget-logo me-auto me-md-0 ms-auto ms-md-0" href="{{ route('landing.index') }}">
                             <h4 class="footer-widget-title">SOVET</h4>
                         </a>
                         <b class="footer-widget-desc me-auto me-md-0 ms-auto ms-md-0">PT SOVETZKYA INDO MANDIRI</b>
@@ -61,7 +61,6 @@
             </div>
         </div>
     </div>
-    </div>
     <!--== End: Footer Main ==-->
 
     <!--== Start: Footer Bottom ==-->
@@ -74,6 +73,13 @@
             </div>
         </div>
     </div>
+
+    <a href="https://api.whatsapp.com/send?phone=628170708008" target="_blank"
+        style="position: fixed; bottom: 20px; left: 20px; font-size: 30px;">
+        <div class="px-1 px-3 rounded bg-primary">
+            <i class="icofont-whatsapp text-white"></i>
+        </div>
+    </a>
     <!--== End: Footer Bottom ==-->
 </footer>
 
@@ -93,9 +99,9 @@
             <!-- Mobile Menu Start -->
             <div class="mobile-menu-items">
                 <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="{{ route('landing.index') }}">Home</a></li>
+                    <li><a href="{{ route('landing.about') }}">About</a></li>
+                    <li><a href="{{ route('landing.contact') }}">Contact</a></li>
                 </ul>
             </div>
             <!-- Mobile Menu End -->
