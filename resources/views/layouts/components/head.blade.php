@@ -26,10 +26,10 @@
       "@context": "https://sovet.id",
       "@type": "WebSite",
       "url": "{{ route('landing.index') }}",
-      "name": "Nama Website",
+      "name": "Sovet",
       "publisher": {
         "@type": "Organization",
-        "name": "Nama Publisher"
+        "name": "Sovet"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
