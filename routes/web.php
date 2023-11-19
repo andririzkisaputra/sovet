@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingController::class, 'home'])->name('landing.index');
 Route::get('/about', [LandingController::class, 'about'])->name('landing.about');
 Route::get('/contact', [LandingController::class, 'contact'])->name('landing.contact');
+Route::get('/sitemap', [SitemapController::class, 'index'])->name('sitemap');
