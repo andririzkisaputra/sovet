@@ -43,7 +43,7 @@ class LandingController extends Controller
                 . "Email : $request->email\n\n"
                 . "Message : $request->message";
             Mail::raw($content, function ($message) use ($request) {
-                $message->to($request->email);
+                $message->to('official@sovet.id');
                 $message->subject('User Messages');
             });
             sleep(2);
