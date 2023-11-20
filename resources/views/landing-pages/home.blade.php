@@ -39,7 +39,7 @@
                 <!--== Start Feature Item ==-->
                 <div class="col-md-6 col-lg-4 mb-6">
                     <div class="feature-item">
-                        <h4 class="title">Crative Coception</h4>
+                        <h4 class="title">Crative Conception</h4>
                         <p class="desc">Crafting creative ideas and unique themes for events.</p>
                     </div>
                 </div>
