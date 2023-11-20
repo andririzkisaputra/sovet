@@ -20,6 +20,9 @@
 <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
+{{-- Google Recaptcha --}}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 {{-- Skrip JSON-LD --}}
 <script type="application/ld+json">
     {

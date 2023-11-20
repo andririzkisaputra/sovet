@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [LandingController::class, 'home'])->name('landing.index');
 Route::get('/about', [LandingController::class, 'about'])->name('landing.about');
 Route::get('/contact', [LandingController::class, 'contact'])->name('landing.contact');
+Route::post('/contact', [LandingController::class, 'contactStore'])->name('landing.contact.store');
 Route::get('/sitemap', [SitemapController::class, 'index'])->name('sitemap');

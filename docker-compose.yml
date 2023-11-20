@@ -1,15 +1,23 @@
 version: '3.8'
 services:
-  sovet.id:
-    image: sovet.id:1.2
-    container_name: sovet.id
-    build:
-      context: docker
-      dockerfile: Dockerfile
-    ports:
-      - '2180:80'
-    volumes:
-      - .:/app
-    working_dir: /app
-    command: >
-      sh -c "php artisan serve --host=0.0.0.0 --port=80"
+    sovet.id:
+        image: sovet.id:1.2
+        container_name: sovet.id
+        restart: unless-stopped
+        build:
+            context: docker
+            dockerfile: Dockerfile
+        ports:
+            - '2180:80'
+        volumes:
+            - .:/app
+        working_dir: /app
+        command: >
+            sh -c "php artisan serve --host=0.0.0.0 --port=80"
+
+    mailpit:
+        image: 'axllent/mailpit:latest'
+        restart: unless-stopped
+        ports:
+            - '${FORWARD_MAILPIT_PORT:-1025}:1025'
+            - '${FORWARD_MAILPIT_UI_PORT:-8025}:8025'

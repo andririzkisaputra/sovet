@@ -110,9 +110,6 @@
             </div>
         </div>
         <div class="section-bg-color-shape section-bg-color-shape-style1 bg-grey"></div>
-        <div class="section-pattern-img section-pattern-img-style1 pattern-img-zoom">
-            <img src="assets/images/shape/1.png" width="127" height="125" alt="Image">
-        </div>
     </div>
     <!--== End: Feature Section Wrapper ==-->
 
@@ -124,29 +121,26 @@
                     <!--== Section Title Start ==-->
                     <div class="section-title-2 mb-0">
                         <h6 class="sub-title">About</h6>
-                        <h2 class="mt-4">"We are a company that specialized on bellow the line activation"</h4>
-                            <p>In this enviroment of fast information and various option that flooded
-                                the market, brands need to adapt a new and effective communication
-                                compaign.</p>
-                            <p>A successful bellow the line activation has to be unique
-                                and one experience that is marked on the consumer mind.</p>
-                            <p>Only bellow the line activation can reach the consumer in avery close and personal
-                                engagement, and it is proven effective.</p>
-                            <p>Personal Brand EXPERENCE is all that it take to win your consumers hearts in a most exciting
-                                and excellent way.</p>
-                            <p>We are customized for personalize services for every activation we engage, because we believe
-                                that each brand own it's own it's own uniqueness and image to be srengthened.</p>
-                            <p>We never generalize our services for our client. At amother point, web activate
-                                our clients campaigns with our hearts, that's what makes us than outhers.</p>
+                        <h2 class="mt-4">"We are a company that specialized on bellow the line activation"</h2>
+                        <p>In this enviroment of fast information and various option that flooded
+                            the market, brands need to adapt a new and effective communication
+                            compaign.</p>
+                        <p>A successful bellow the line activation has to be unique
+                            and one experience that is marked on the consumer mind.</p>
+                        <p>Only bellow the line activation can reach the consumer in avery close and personal
+                            engagement, and it is proven effective.</p>
+                        <p>Personal Brand EXPERENCE is all that it take to win your consumers hearts in a most exciting
+                            and excellent way.</p>
+                        <p>We are customized for personalize services for every activation we engage, because we believe
+                            that each brand own it's own it's own uniqueness and image to be srengthened.</p>
+                        <p>We never generalize our services for our client. At amother point, web activate
+                            our clients campaigns with our hearts, that's what makes us than outhers.</p>
                     </div>
                     <!--== Section Title End ==-->
                 </div>
             </div>
         </div>
         <div class="section-bg-img section-bg-img-style1" data-bg-img="{{ asset('assets/images/photos/about.jpg') }}"></div>
-        <div class="section-pattern-img section-pattern-img-style2 pattern-img-move">
-            <img src="assets/images/shape/2.png" width="148" height="190" alt="Image">
-        </div>
     </div>
     <!--== End: About Section Wrapper ==-->
 
@@ -195,9 +189,6 @@
             </div>
         </div>
         <div class="section-bg-color-shape section-bg-color-shape-style2"></div>
-        <div class="section-pattern-img section-pattern-img-style3 pattern-img-move">
-            <img src="assets/images/shape/3.png" width="107" height="170" alt="Image">
-        </div>
     </div>
     <!--== End: Campaign Section Wrapper ==-->
 
