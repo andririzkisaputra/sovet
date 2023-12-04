@@ -39,7 +39,7 @@
                 <!--== Start Feature Item ==-->
                 <div class="col-md-6 col-lg-4 mb-6">
                     <div class="feature-item">
-                        <h4 class="title">Crative Conception</h4>
+                        <h4 class="title">Creative Conceptor</h4>
                         <p class="desc">Crafting creative ideas and unique themes for events.</p>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                 <!--== Start Feature Item ==-->
                 <div class="col-md-6 col-lg-4 mb-6">
                     <div class="feature-item">
-                        <h4 class="title">Design & Executin</h4>
+                        <h4 class="title">Design & Execute</h4>
                         <p class="desc">Bringing ideas to life with technical detail for events.</p>
                     </div>
                 </div>
