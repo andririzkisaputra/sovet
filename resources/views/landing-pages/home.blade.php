@@ -199,10 +199,10 @@
             </div>
             <!--== End Section Title ==-->
 
-            <div class="customer-logos slider d-flex">
+            <div class="customer-logos slider text-center">
                 <!--== Start Campaign Item ==-->
                 <a href="javascript:void(0)" class="image rounded">
-                    <img src="{{ asset('assets/images/client/clients.png') }}" alt="{{ ENV('APP_NAME') }}">
+                    <img src="{{ asset('img/client/clients.png') }}" alt="{{ ENV('APP_NAME') }}">
                 </a>
                 <!--== End Campaign Item ==-->
             </div>
