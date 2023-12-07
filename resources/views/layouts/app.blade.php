@@ -12,8 +12,9 @@
     <meta name="apple-mobile-web-app-title" content="{{ ENV('APP_NAME') }}">
     <meta name="google-site-verification" content="{{ ENV('GOOGLE_SITE_VERIFICATION') }}">
     <meta name="description"
-        content="{{ ENV('APP_NAME') }}, Event Organizer, Event Organizer Yogyakarta, Event Organizer Indonesia" />
-    <meta name="keywords" content="{{ ENV('APP_NAME') }} Event Organizer" />
+        content="{{ ENV('APP_NAME') }}, Event Organizer, Event Organizer Yogyakarta, Event Organizer Indonesia, Organizer, Production, Media Management" />
+    <meta name="keywords"
+        content="{{ ENV('APP_NAME') }} , Event Organizer, Event Organizer Yogyakarta, Event Organizer Indonesia, Organizer, Production, Media Management" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title') | {{ ENV('APP_NAME') }}</title>
     <link rel="alternate" href="{{ Request::url() }}" hreflang="it">
