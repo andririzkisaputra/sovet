@@ -153,39 +153,37 @@
             </div>
             <!--== End Section Title ==-->
 
-            <div class="row row-gutter-60 mb-n8">
-                <!--== Start Campaign Item ==-->
-                <div class="col-md-6 col-lg-4 mb-8">
-                    <div class="campaign-item">
-                        <a href="javascript:void(0)" class="image">
-                            <img src="{{ asset('assets/images/events/event-1.jpg') }}" width="350" height="250"
-                                alt="{{ ENV('APP_NAME') }}">
-                        </a>
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        @foreach ($galerys as $key => $item)
+                            <div class="carousel-item {{ $key == 0 ? 'active' : null }}">
+                                <div class="col-md-3">
+                                    <div class="card campaign-item">
+                                        <div class="card-img">
+                                            <a href="javascript:void(0)" class="image magnific-popup"
+                                                onclick="loadPopupImage('{{ Crypt::encryptString($item->id) }}')">
+                                                <img src="{{ asset('img/events/' . $item->slug . '/' . json_decode($item->image)[0]) }}"
+                                                    alt="{{ ENV('APP_NAME') }}" class="img-fluid">
+                                            </a>
+                                        </div>
+                                        <div class="position-absolute event-list px-2 pt-1">
+                                            <b>{{ $item->name }}</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-black mx-3 rounded" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-black mx-3 rounded" aria-hidden="true"></span>
+                    </a>
                 </div>
-                <!--== End Campaign Item ==-->
-
-                <!--== Start Campaign Item ==-->
-                <div class="col-md-6 col-lg-4 mb-8">
-                    <div class="campaign-item">
-                        <a href="javascript:void(0)" class="image">
-                            <img src="{{ asset('assets/images/events/event-2.jpg') }}" width="350" height="250"
-                                alt="{{ ENV('APP_NAME') }}">
-                        </a>
-                    </div>
-                </div>
-                <!--== End Campaign Item ==-->
-
-                <!--== Start Campaign Item ==-->
-                <div class="col-md-6 col-lg-4 mb-8">
-                    <div class="campaign-item">
-                        <a href="javascript:void(0)" class="image">
-                            <img src="{{ asset('assets/images/events/event-3.jpg') }}" width="350" height="250"
-                                alt="{{ ENV('APP_NAME') }}">
-                        </a>
-                    </div>
-                </div>
-                <!--== End Campaign Item ==-->
             </div>
         </div>
         <div class="section-bg-color-shape section-bg-color-shape-style2"></div>
@@ -212,3 +210,112 @@
     </div>
     <!--== End: Campaign Section Wrapper ==-->
 @endsection
+
+@push('css')
+    <style>
+        @media (max-width: 767px) {
+            .carousel-inner .carousel-item>div {
+                display: none;
+            }
+
+            .carousel-inner .carousel-item>div:first-child {
+                display: block;
+            }
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        /* medium and up screens */
+        @media (min-width: 768px) {
+
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(25%);
+            }
+
+            .carousel-inner .carousel-item-start.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-25%);
+            }
+        }
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start {
+            transform: translateX(0);
+        }
+
+        .img-fluid,
+        .img-thumbnail {
+            max-width: 100%;
+            height: 200px !important;
+            object-fit: cover;
+        }
+    </style>
+@endpush
+
+@push('script')
+    <script>
+        let items = document.querySelectorAll('.carousel .carousel-item')
+
+        items.forEach((el) => {
+            const minPerSlide = 4
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+                }
+                let cloneChild = next.cloneNode(true)
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+        })
+    </script>
+@endpush
+
+@push('script')
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/magnific-popup.min.css') }}">
+    <script src="{{ asset('assets/js/plugins/jquery.magnific-popup.min.js') }}"></script>
+    <script>
+        function loadPopupImage(slug) {
+            var formData = new FormData();
+            formData.append('slug', slug);
+            var csrfToken = $('meta[name="csrf-token"]').attr('content');
+            formData.append('_token', csrfToken);
+
+            $.ajax({
+                url: "{{ route('services.landing.contact.listImage') }}",
+                method: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    if (response.statusCode === 200) {
+                        var images = [];
+                        $.each(response.data.image, function(index, value) {
+                            var url = "{{ asset('img/events/') }}/" + response.data.slug + "/" + value
+                            images.push({
+                                title: response.data.name,
+                                src: url
+                            });
+                        });
+                        $.magnificPopup.open({
+                            items: images,
+                            gallery: {
+                                enabled: true
+                            },
+                            type: 'image'
+                        });
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        }
+    </script>
+@endpush

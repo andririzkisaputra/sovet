@@ -2,3 +2,14 @@
 .footer-about {
     display: -webkit-inline-box;
 }
+.event-list {
+    left: 0px;
+    bottom: 0px;
+    background-color: #00000073;
+    width: 100%;
+    padding-left: 10px;
+    color: #cb914f;
+    text-shadow: 0px 0px 10px #000;
+    height: 3.5rem;
+    line-height: 1.5rem;
+}

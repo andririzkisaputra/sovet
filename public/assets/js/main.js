@@ -133,27 +133,6 @@
       }
     });
 
-  /* Feature BG Shape */
-    function feature () {
-      const bgValue = 'M67.5,0A67.5,67.5,0,1,1,0,67.5,67.5,67.5,0,0,1,67.5,0Z',
-        bgViewBox = '0 0 135 135',
-      bgHoverValue = 'M66.446,1.63C85.636-1.952,102.739.177,114.92,9.941c12.2,9.423,19.483,26.48,19.505,44.854-.064,18.452-9.378,31.183-21.7,43.107-12.572,11.353-28.155,21.9-46.449,22.791C29.557,121.613.345,96.354,0,59.188-.2,23.056,28.053,11.414,66.446,1.63',
-      bgHoverViewBox = '0 0 134 120',
-      features = document.querySelectorAll('.feature-item')
-      features.forEach(function(feature){
-        const bgSvg = feature.querySelector('.bg')
-        feature.addEventListener('mouseover', function() {
-          bgSvg.firstElementChild.setAttribute('d', bgHoverValue)
-          bgSvg.setAttribute('viewBox', bgHoverViewBox)
-        })
-        feature.addEventListener('mouseout', function() {
-          bgSvg.firstElementChild.setAttribute('d', bgValue)
-          bgSvg.setAttribute('viewBox', bgViewBox)
-        })
-      })
-    }
-    feature()
-
   // Svg Inject Js
     SVGInject(document.querySelectorAll(".svg-inject"));
 

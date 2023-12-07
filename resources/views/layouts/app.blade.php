@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="keywords" content="{{ ENV('APP_NAME') }} Event Organizer" />
     <meta name="author" content="codecarnival" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('layouts.components.head')
 </head>
 
