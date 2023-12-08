@@ -1,6 +1,6 @@
 <!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
-
+<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+<link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
 <!-- CSS (Font, Vendor, Icon, Plugins & Style CSS files) -->
 
 <!-- Font CSS -->

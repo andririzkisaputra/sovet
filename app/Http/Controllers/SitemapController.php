@@ -9,9 +9,9 @@ class SitemapController extends Controller
     public function index()
     {
         $pages = [
-            ['url' => route('landing.index'), 'lastmod' => '2023-12-07', 'changefreq' => 'weekly', 'priority' => '1.0'],
-            ['url' => route('landing.about'), 'lastmod' => '2023-12-07', 'changefreq' => 'weekly', 'priority' => '1.0'],
-            ['url' => route('landing.contact'), 'lastmod' => '2023-12-07', 'changefreq' => 'weekly', 'priority' => '1.0'],
+            ['url' => route('landing.index'), 'lastmod' => '2023-12-09', 'changefreq' => 'weekly', 'priority' => '1.0'],
+            ['url' => route('landing.about'), 'lastmod' => '2023-12-09', 'changefreq' => 'weekly', 'priority' => '1.0'],
+            ['url' => route('landing.contact'), 'lastmod' => '2023-12-09', 'changefreq' => 'weekly', 'priority' => '1.0'],
         ];
 
         $xml = new \XMLWriter();

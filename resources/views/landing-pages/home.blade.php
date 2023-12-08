@@ -12,8 +12,8 @@
                 <div class="swiper-slide hero-slide-item">
                     <div class="container-fluid">
                         <div class="hero-slide-content">
-                            <h2 class="hero-slide-sub-title">Company Profile</h2>
-                            <h1 class="hero-slide-title">Event Organizer.</h1>
+                            <p class="hero-slide-sub-title h3">Company Profile</p>
+                            <p class="hero-slide-title h1">Event Organizer.</p>
                         </div>
                     </div>
                     <div class="hero-slide-shape-one" data-bg-img="assets/images/slider/slide-bg-color1.jpg"></div>

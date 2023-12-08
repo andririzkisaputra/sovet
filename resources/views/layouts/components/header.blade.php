@@ -51,7 +51,7 @@
                 <div class="col-auto">
                     <div class="header-logo">
                         <a href="{{ route('landing.index') }}">
-                            <h3>SOVET</h3>
+                            <h1 class="h3">SOVET</h1>
                         </a>
                     </div>
                 </div>
