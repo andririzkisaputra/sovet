@@ -35,7 +35,7 @@
                             <div class="col-md-5 footer-widget-nav1">
                                 <h4 class="footer-widget-title">Branch Office</h4>
                                 <h4 class="collapsed-title collapsed" data-bs-toggle="collapse"
-                                    data-bs-target="#dividerId-1" aria-expanded="false">Main Office</h4>
+                                    data-bs-target="#dividerId-2" aria-expanded="false">Branch Office</h4>
                                 <div id="dividerId-1" class="widget-collapse-body collapse">
                                     <ul class="footer-widget-nav">
                                         <li class="text-white">
