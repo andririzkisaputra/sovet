@@ -164,7 +164,7 @@
                                             <a href="javascript:void(0)" class="image magnific-popup"
                                                 onclick="loadPopupImage('{{ Crypt::encryptString($item->id) }}')">
                                                 <img src="{{ asset('img/events/' . $item->slug . '/' . json_decode($item->image)[0]) }}"
-                                                    alt="{{ ENV('APP_NAME') }}" class="img-fluid">
+                                                    alt="{{ $item->name }}" class="img-fluid">
                                             </a>
                                         </div>
                                         <div class="position-absolute event-list px-2 pt-1">
