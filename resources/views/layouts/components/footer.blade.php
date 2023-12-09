@@ -36,7 +36,7 @@
                                 <h4 class="footer-widget-title">Branch Office</h4>
                                 <h4 class="collapsed-title collapsed" data-bs-toggle="collapse"
                                     data-bs-target="#dividerId-2" aria-expanded="false">Branch Office</h4>
-                                <div id="dividerId-1" class="widget-collapse-body collapse">
+                                <div id="dividerId-2" class="widget-collapse-body collapse">
                                     <ul class="footer-widget-nav">
                                         <li class="text-white">
                                             <b>Jakarta</b>
